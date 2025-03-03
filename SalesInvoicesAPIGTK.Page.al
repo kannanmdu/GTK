@@ -1,8 +1,28 @@
-page 50100 "Sales Invoices API"
+namespace GTKAPI;
+
+using Microsoft.Integration.Entity;
+using Microsoft.Finance.GeneralLedger.Account;
+using Microsoft.Finance.GeneralLedger.Setup;
+using Microsoft.Integration.Graph;
+using Microsoft.Inventory.Item;
+using System.Reflection;
+using Microsoft.API.V2;
+using gtkapi;
+using Microsoft.Sales.Customer;
+using Microsoft.Finance.Currency;
+using Microsoft.Foundation.PaymentTerms;
+using Microsoft.Foundation.Shipping;
+using Microsoft.Sales.History;
+using Microsoft.Sales.Document;
+using System.Threading;
+using Microsoft.Sales.Posting;
+using System.Email;
+using Microsoft.Utilities;
+page 50100 "Sales Invoices API GTK"
 {
     APIGroup = 'GTKAPI';
     APIPublisher = 'GTKIPL';
-    APIVersion = 'v1.0';
+    APIVersion = 'v2.0';
     ApplicationArea = All;
     Caption = 'salesInvoicesAPI';
     DelayedInsert = true;
@@ -542,7 +562,7 @@ page 50100 "Sales Invoices API"
                     EntitySetName = 'dimensionSetLines';
                     SubPageLink = "Parent Id" = field(Id), "Parent Type" = const("Sales Invoice");
                 }
-                part(salesInvoiceLines; "APIV2 - Sales Invoice Lines")
+                part(salesInvoiceLines; "Sales Invoice Lines API GTK")
                 {
                     Caption = 'Lines';
                     EntityName = 'salesInvoiceLine';

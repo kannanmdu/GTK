@@ -10,7 +10,14 @@
   "help": "",
   "url": "",
   "logo": "",
-  "dependencies": [],
+  "dependencies": [     {
+    "id": "10cb69d9-bc8a-4d27-970a-9e110e9db2a5",
+      "name": "_Exclude_APIV2_",
+      "publisher": "Microsoft",
+      "version": "21.0.0.0"
+    }
+  
+  ],
   "screenshots": [],
   "platform": "1.0.0.0",
   "application": "25.0.0.0",
@@ -25,7 +32,7 @@
     "allowDownloadingSource": true,
     "includeSourceInSymbolFile": true
   },
-  "runtime": "15.0",
+  "runtime": "14.3",
   "features": [
     "NoImplicitWith"
   ]
