@@ -43,8 +43,6 @@ page 50104 "Journal Lines API GTK Custom"
                 field(journalTemplateName; Rec."Journal Template Name")
                 {
                     Caption = 'Journal Template Name';
-
-
                 }
                 field(lineNo; Rec."Line No.")
                 {
@@ -87,9 +85,6 @@ page 50104 "Journal Lines API GTK Custom"
                 {
                     Caption = 'Your Reference';
                 }
-
-
-
                 field(accountId; Rec."Account Id")
                 {
                     Caption = 'Account Id';
@@ -150,12 +145,10 @@ page 50104 "Journal Lines API GTK Custom"
                 {
                     Caption = 'Description';
                 }
-
                 field(documentDate; Rec."Document Date")
                 {
                     Caption = 'Document Date';
                 }
-
                 field(dueDate; Rec."Due Date")
                 {
                     Caption = 'Due Date';
@@ -184,10 +177,9 @@ page 50104 "Journal Lines API GTK Custom"
             }
         }
     }
-    // Add this after the layout section and before the closing brace
-
 
     trigger OnInsertRecord(BelowxRec: Boolean): Boolean
+
     begin
         if Rec."Line No." = 0 then
             Rec."Line No." := GetNextLineNo();
