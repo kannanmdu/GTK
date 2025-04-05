@@ -32,7 +32,7 @@ page 50104 "Journal Lines API GTK Custom"
                 {
                     Caption = 'SystemId';
                 }
-                field(journalBatchId; Rec."Journal Batch Id")
+                field(journalBatchId; Rec."Journal Batch Id") //API Page can accept only Journal Batch Id, Journal batch name cannot be used issue #2
                 {
                     Caption = 'Journal Batch Id';
                 }
