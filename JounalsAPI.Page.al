@@ -56,13 +56,13 @@ page 50103 "Jounals API"
                     Caption = 'Balancing Account No.';
                     Editable = false;
                 }
-                part(journalLines; "journal Lines API GTK")
-                {
-                    Caption = 'Journal Lines';
-                    EntityName = 'journalLine';
-                    EntitySetName = 'journalLines';
-                    SubPageLink = "Journal Batch Id" = field(SystemId);
-                }
+                // part(journalLines; "journal Lines API GTK")
+                // {
+                //     Caption = 'Journal Lines';
+                //     EntityName = 'journalLine';
+                //     EntitySetName = 'journalLines';
+                //     SubPageLink = "Journal Batch Id" = field(SystemId);
+                // }
             }
         }
     }
@@ -129,7 +129,7 @@ page 50103 "Jounals API"
     local procedure SetActionResponse(var ActionContext: WebServiceActionContext; GenJournalBatchId: Guid)
     begin
         ActionContext.SetObjectType(ObjectType::Page);
-        ActionContext.SetObjectId(Page::"Journal Lines API GTK");
+        // ActionContext.SetObjectId(Page::"Journal Lines API GTK");
         ActionContext.AddEntityKey(Rec.FieldNo(SystemId), GenJournalBatchId);
         ActionContext.SetResultCode(WebServiceActionResultCode::Deleted);
     end;
