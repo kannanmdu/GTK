@@ -1,0 +1,35 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Attach: GTK Sandbox",
+            "type": "al",
+            "request": "attach", 
+            "tenant": "4b12c967-0958-4d5f-ae73-460055fbb27d",
+            "environmentType": "Sandbox",
+            "environmentName": "sandbox",
+            "breakOnError": "All",
+            "breakOnRecordWrite": "None",
+            "enableSqlInformationDebugger": true,
+            "enableLongRunningSqlStatements": true,
+            "longRunningSqlStatementsThreshold": 500,
+            "numberOfSqlStatements": 10,
+            "userId": "GTK API",
+            "breakOnNext": "WebServiceClient"
+        },
+        {
+            "name": "Launch: GTK Sandbox",
+            "request": "launch",
+            "type": "al",
+            "tenant": "4b12c967-0958-4d5f-ae73-460055fbb27d",
+            "environmentType": "Sandbox",
+            "environmentName": "Sandbox",
+            "startupObjectId": 22,
+            "startupObjectType": "Page",
+            "breakOnError": "All",
+            "launchBrowser": true,
+            "enableLongRunningSqlStatements": true,
+            "enableSqlInformationDebugger": true
+        }
+    ]
+}
