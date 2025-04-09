@@ -64,7 +64,7 @@ page 50104 "Journal Lines API GTK Custom"
                         RegisterFieldSet(Rec.FieldNo("Journal Batch Name"));
                     end;
                 }
-                field(lineNo; Rec."Line No.")
+                field(lineNumber; Rec."Line No.")
                 {
                     Caption = 'Line No.';
                     trigger OnValidate()
@@ -91,7 +91,7 @@ page 50104 "Journal Lines API GTK Custom"
                         RegisterFieldSet(Rec.FieldNo("Account Type"));
                     end;
                 }
-                field(accountNo; Rec."Account No.")
+                field(accountNumber; Rec."Account No.")
                 {
                     Caption = 'Account No.';
                     trigger OnValidate()
@@ -117,7 +117,7 @@ page 50104 "Journal Lines API GTK Custom"
                         RegisterFieldSet(Rec.FieldNo(Amount));
                     end;
                 }
-                field(balAccountNo; Rec."Bal. Account No.")
+                field(balAccountNumber; Rec."Bal. Account No.")
                 {
                     Caption = 'Bal. Account No.';
                 }
@@ -145,7 +145,7 @@ page 50104 "Journal Lines API GTK Custom"
                         RegisterFieldSet(Rec.FieldNo("Posting Date"));
                     end;
                 }
-                field(documentNo; Rec."Document No.")
+                field(documentNumber; Rec."Document No.")
                 {
                     Caption = 'Document No.';
                     trigger OnValidate()
@@ -154,7 +154,7 @@ page 50104 "Journal Lines API GTK Custom"
                     end;
                 }
 
-                field(externalDocumentNo; Rec."External Document No.")
+                field(externalDocumentNumber; Rec."External Document No.")
                 {
                     Caption = 'External Document No.';
                     trigger OnValidate()
