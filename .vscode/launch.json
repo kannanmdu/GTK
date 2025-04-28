@@ -24,8 +24,6 @@
             "tenant": "4b12c967-0958-4d5f-ae73-460055fbb27d",
             "environmentType": "Sandbox",
             "environmentName": "Sandbox",
-            "startupObjectId": 50102,
-            "startupObjectType": "Page",
             "breakOnError": "All",
             "launchBrowser": true,
             "enableLongRunningSqlStatements": true,
