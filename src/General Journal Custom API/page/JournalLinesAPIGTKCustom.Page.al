@@ -7,6 +7,7 @@ using Microsoft.Bank.BankAccount;
 using Microsoft.Integration.Graph;
 using System.Reflection;
 
+
 page 50104 "Journal Lines API GTK Custom"
 {
     APIGroup = 'GTKAPI';
@@ -380,4 +381,5 @@ page 50104 "Journal Lines API GTK Custom"
     var
         TempFieldSet: Record "Field" temporary;
         FirstEntryNo: Integer;
+
 }
