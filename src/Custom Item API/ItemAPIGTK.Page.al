@@ -74,13 +74,6 @@ page 50106 "ItemAPIGTK"
                         RegisterFieldSet(Rec.FieldNo(Type));
                     end;
                 }
-                field(InventoryPostingGroup; Rec."Inventory Posting Group")
-                {
-                    trigger OnValidate()
-                    begin
-                        RegisterFieldSet(Rec.FieldNo("Inventory Posting Group"));
-                    end;
-                }
                 field(CostingMethod; Rec."Costing Method")
                 {
                     trigger OnValidate()
@@ -88,6 +81,22 @@ page 50106 "ItemAPIGTK"
                         RegisterFieldSet(Rec.FieldNo("Costing Method"));
                     end;
                 }
+                field(ItemTrackingCode; Rec."Item Tracking Code")
+                {
+                    trigger OnValidate()
+                    begin
+                        RegisterFieldSet(Rec.FieldNo("Item Tracking Code"));
+                    end;
+                }
+
+                field(InventoryPostingGroup; Rec."Inventory Posting Group")
+                {
+                    trigger OnValidate()
+                    begin
+                        RegisterFieldSet(Rec.FieldNo("Inventory Posting Group"));
+                    end;
+                }
+
                 field(Blocked; Rec.Blocked)
                 {
                     trigger OnValidate()
@@ -171,13 +180,7 @@ page 50106 "ItemAPIGTK"
                         RegisterFieldSet(Rec.FieldNo("Purch. Unit of Measure"));
                     end;
                 }
-                field(ItemTrackingCode; Rec."Item Tracking Code")
-                {
-                    trigger OnValidate()
-                    begin
-                        RegisterFieldSet(Rec.FieldNo("Item Tracking Code"));
-                    end;
-                }
+
             }
         }
     }
