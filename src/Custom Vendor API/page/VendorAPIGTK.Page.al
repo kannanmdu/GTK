@@ -103,12 +103,12 @@ page 50105 "Vendor  API GTK"
                         RegisterFieldSet(Rec.FieldNo("E-Mail"));
                     end;
                 }
-                field(taxRegistrationNumber; Rec."VAT Registration No.")
+                field(taxRegistrationNumber; Rec."Registration Number")
                 {
                     Caption = 'Tax Registration Number';
                     trigger OnValidate()
                     begin
-                        RegisterFieldSet(Rec.FieldNo("VAT Registration No."));
+                        RegisterFieldSet(Rec.FieldNo("Registration Number"));
                     end;
                 }
                 field(currencyCode; Rec."Currency Code")
